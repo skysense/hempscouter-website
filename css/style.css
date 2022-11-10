@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 14pt;
+  font-weight: 300;
+}
+p {
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+blockquote {
+  line-height: 1.4;
+  background: #eee;
+  margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+  border-left: solid 3px #ccc;
+}
+h2 {
+  font-size: 1.8em;
+  margin-top: 0;
+  margin-bottom: 0em;
+}
+a {
+  color: inherit;
+}
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3em 1em;
+}
+header {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  padding: 1em 2em;
+  color: white;
+  align-items: center;
+  transition: background ease .1s;
+}
+header.scroll {
+  background: rgba(255,255,255,0.9);
+  color: black;
+  border-bottom: solid 1px #ccc;
+  padding: .5em 1em;
+}
+header.scroll:after {
+  display: none;
+}
+header nav {
+  display: flex;
+  margin-left: auto !important;
+}
+header a {
+  text-decoration: none;
+  margin-left: 2em;
+}
+header:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 10%, transparent 100%);
+}
+.sub {
+  font-size: 0.7em;
+  color: #2e88fa;
+  font-weight: bold;
+}
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 4em;
+}
+.hero h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 30px;
+  margin-top: 0;
+}
+.hero div {
+  text-align: center;
+  z-index: 20;
+  color: white;
+}
+.hero video {
+  position: absolute;
+  z-index: 10;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+  filter: brightness(.75);
+}
+.hero a {
+  padding: 1em 3em;
+  border-radius: 2em;
+}
+.btn {
+  display: inline-block;
+  background: #2e88fa;
+  text-decoration: none;
+  padding: .5em 1em;
+  border-radius: .4em;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 1em;
+}
+.wrap {
+  /*background-image: url(https://www.terraview.co/wp-content/uploads/2021/01/bg-circles.png);
+  background-position: top center;
+  background-repeat: repeat-y;
+  background-size: cover;*/
+}
+.flex {
+  display: flex;
+  margin: 0 -1em;
+}
+.flex > div {
+  padding: 1em;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.gallery img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+.flex-shrink {
+  flex-shrink: 1;
+}
+.center {
+  text-align: center;
+}
+.pricing {
+  padding: 1.5em;
+  border-radius: .5em;
+  background: #2e88fa;
+  color: white;
+}
+.pricing .caps {
+  color: white;
+}
+.pricing ul {
+  margin-top: .6em;
+  padding-top: 4px;
+  border-top: solid 2px #ccc;
+}
+.pricing li {
+  display: flex;
+  align-items: center;
+  padding: 2px 0;
+  margin-top: 8px;
+}
+.pricing svg {
+  margin-right: 4px;
+  height: 16px;
+  position: relative;
+  top: 1px;
+}
+.pricing .btn {
+  margin-top: 1em;
+  background: white;
+  color: black;
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.chevron {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.8;
+}
+
+section#product .flex > div > div {
+  background: #eee;
+  height: 100%;
+  padding: 1.2em;
+  border-radius: 1em;
+}
+
+section#product h3 {
+  margin: 0;
+}
+
+section#product p {
+  margin-top: 8px;
+}
+
+#contact {
+  margin: 4em 0;
+}
+
+section.contact .flex {
+  align-items: flex-end;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: .5em;
+  border-radius: .5em;
+}
+
+label {
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+/*
+section.locations {
+  background-image: url(map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+*/
+
+.alt {
+  background: #f0f0f0;
+}
+
+.text-xl {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+footer {
+  background: #2e88fa;
+  color: white;
+}
+footer a {
+  display: block;
+}
+footer .flex {
+  align-items: flex-start;
+}
+.copyright {
+  font-size: 0.8em;
+  margin-top: 1em;
+}
+.caps {
+  text-transform: uppercase;
+  color: #2e88fa;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    margin-bottom: 1em;
+  }
+  header nav {
+    display: none;
+  }
+  header .btn {
+    margin-left: auto;
+  }
+  section {
+    padding: 2em 1em;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  section.contact .flex {
+    align-items: flex-start;
+  }
+}
+
+.phone {
+  max-height: 600px;
+  margin: 0 auto;
+  display: block;
+}
