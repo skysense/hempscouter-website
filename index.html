@@ -9,14 +9,19 @@
   <title>HempScouter | Male Hemp Plant Drone Scouting</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js" integrity="sha512-yBpuflZmP5lwMzZ03hiCLzA94N0K2vgBtJgqQ2E1meJzmIBfjbb7k4Y23k2i2c/rIeSUGc7jojyIY5waK3ZxCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#2e88fa">
 </head>
 
 <body>
 
   <header>
-    <div>
-      <div class="brand">HempScouter</div>
-      <div class="sub">by Skysense</div>
+    <div class="logo">
+      <img src="img/logo.png" />
     </div>
     <nav>
       <a href="#pricing">Pricing</a>
@@ -35,7 +40,7 @@
     </div>
     <video autoplay loop muted poster="img/preview.jpg">
       <source
-        src="video.mp4"
+        src="video2.mp4"
         type="video/mp4" />Your browser does not support the video tag.
     </video>
     <div class="chevron">
@@ -224,7 +229,7 @@
         </div>
         <div>
           <label>Phone</label>
-          <input type="tel" name="phone" placeholder="+1 000 000 000" />
+          <input type="tel" name="phone" placeholder="+1" />
         </div>
         <div>
           <button type="submit" class="btn">Contact Us</button>
@@ -286,24 +291,31 @@
 
   </section>
 
-  <section>
-    <div>Final call to action</div>
-  </section>
+  <div class="cta">
+    <section>
+      <h2>How can we help?</h2>
+      <p>Get in touch or speak to sales to learn more about HempScouter</p>
+      <a class="btn" href="#contact">Contact us</a>
+    </section>
+  </div>
 
   <footer>
     <section>
+      <a href="/">
+        <img src="img/logo.png" />
+      </a>
       <div class="flex">
         <div>
-          <div>HempScouter</div>
-          <div>by Skysense</div>
+          <a href="#pricing">Pricing</a>
         </div>
         <div>
-          <a href="#">Overview</a>
-          <a href="#">Pricing</a>
-          <a href="#">Company</a>
+          <a href="#product">Product</a>
         </div>
         <div>
-          <a href="#">hello@foobar.com</a>
+          <a href="#company">Company</a>
+        </div>
+        <div>
+          <a href="#contact">Contact</a>
         </div>
       </div>
       <div class="copyright">Terms & Privacy Policy. © 2022 Skysense Inc. All rights reserved.</div>
