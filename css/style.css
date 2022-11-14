@@ -290,7 +290,7 @@ footer .flex {
     display: none;
   }
   header .btn {
-    margin-left: auto;
+    display: none;
   }
   section {
     padding: 2em 1em;
