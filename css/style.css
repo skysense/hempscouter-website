@@ -60,7 +60,7 @@ header:after {
   background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 100%);
 }
 header .logo img {
-  height: 30px;
+  height: 35px;
   border-radius: 0;
 }
 
@@ -71,6 +71,7 @@ header.scroll {
   color: black;
   border-bottom: solid 1px #ccc;
   padding: .5em 1em;*/
+  display: none;
 }
 header.scroll .logo img {
   height: 30px;
