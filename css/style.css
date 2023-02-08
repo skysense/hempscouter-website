@@ -330,3 +330,33 @@ footer .flex {
   background: white;
   color: black;
 }
+
+.team {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .team {
+    flex-direction: column;
+  }
+}
+
+.team > div {
+  padding: 2em;
+}
+
+.team img {
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.team .name {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.team p {
+  font-size: 0.9em;
+}
