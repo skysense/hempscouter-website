@@ -23,6 +23,17 @@
     gtag('js', new Date());
     gtag('config', 'G-W4QLP3YENY');
   </script>
+
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LemtUopAAAAAN2Lh9zVLZVBefRScAoOCjc9B3UQ"></script>
+  <script>
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LemtUopAAAAAN2Lh9zVLZVBefRScAoOCjc9B3UQ', { action: 'homepage' })
+      .then(function(token) {
+        document.getElementById('captchaResponse').value = token;
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -245,7 +256,7 @@
   <div class="alt" id="contact">
     <section class="contact">
       <h2>Get in touch</h2>
-      <form class="flex" method="POST" action="https://app.skysense.jp/contact">
+      <form class="flex" method="POST" action="https://getform.io/f/f7407816-72c4-4c41-8f3a-5286bcba5328">
         <div>
           <label>Name</label>
           <input type="text" name="name" required="required" />
@@ -261,8 +272,10 @@
         <div>
           <button type="submit" class="btn">Contact Us</button>
         </div>
-        <input type="hidden" name="honeypot" value="">
+        <input type="hidden" name="_gotcha" style="display:none !important">
         <input type="hidden" name="language" value="en">
+        <input type="hidden" name="type" value="hempscouter">
+        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
       </form>
     </section>
   </div>
