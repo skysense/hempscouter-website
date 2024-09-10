@@ -23,6 +23,9 @@
     gtag('js', new Date());
     gtag('config', 'G-W4QLP3YENY');
   </script>
+
+  <!-- Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 
 <body>
@@ -245,24 +248,27 @@
   <div class="alt" id="contact">
     <section class="contact">
       <h2>Get in touch</h2>
-      <form class="flex" method="POST" action="https://formbold.com/s/ob2w0">
-        <div>
-          <label>Name</label>
-          <input type="text" name="name" required="required" />
+      <form method="POST" action="https://formbold.com/s/ob2w0">
+        <div class="flex">
+          <div>
+            <label>Name</label>
+            <input type="text" name="name" required="required" />
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="text" name="email" required="required" />
+          </div>
+          <div>
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="+1" />
+          </div>
+          <div>
+            <button type="submit" class="btn">Contact Us</button>
+          </div>
+          <input type="hidden" name="language" value="en">
+          <input type="hidden" name="type" value="hempscouter">
         </div>
-        <div>
-          <label>Email</label>
-          <input type="text" name="email" required="required" />
-        </div>
-        <div>
-          <label>Phone</label>
-          <input type="tel" name="phone" placeholder="+1" />
-        </div>
-        <div>
-          <button type="submit" class="btn">Contact Us</button>
-        </div>
-        <input type="hidden" name="language" value="en">
-        <input type="hidden" name="type" value="hempscouter">
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAAdJSPdA27x_X1le" data-theme="light"></div>
       </form>
     </section>
   </div>
