@@ -26,6 +26,11 @@
 
   <!-- Turnstile -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+  <!-- Helpscout Beacon -->
+  <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+  <script type="text/javascript">window.Beacon('init', 'f38589e3-427f-4004-b474-9caf958bef7a')</script>
+  <script type="text/javascript">window.Beacon('config', { color: '#2e88fa' })</script>
 </head>
 
 <body>
@@ -38,16 +43,16 @@
       <a href="#pricing">Pricing</a>
       <a href="#product">Product</a>
       <a href="#company">Company</a>
-      <a href="#contact">Contact</a>
+      <a href="javascript:window.Beacon('open')">Contact</a>
     </nav>
-    <a class="btn" href="#contact">Speak to Sales</a>
+    <a class="btn" href="javascript:window.Beacon('open')">Speak to Sales</a>
   </header>
 
   <div class="hero">
     <div>
       <h1>Find and Remove Male Hemp Plants</h1>
       <p>Increase CBD yield and reduce labor costs by 10X</p>
-      <a class="btn" href="#contact">Speak to Sales</a>
+      <a class="btn" href="javascript:window.Beacon('open')">Speak to Sales</a>
     </div>
     <video autoplay loop muted playsinline poster="img/preview.jpg">
       <source
@@ -170,7 +175,7 @@
           </div>
         </li>
       </ul>
-      <a href="#contact" class="btn">Speak to Sales</a>
+      <a href="javascript:window.Beacon('open')" class="btn">Speak to Sales</a>
     </div>
   </section>
 
@@ -245,35 +250,7 @@
     </div>
   </section>
 
-  <div class="alt" id="contact">
-    <section class="contact">
-      <h2>Get in touch</h2>
-      <form method="POST" action="https://app.skysense.ag/contact">
-        <div class="flex">
-          <div>
-            <label>Name</label>
-            <input type="text" name="name" required="required" />
-          </div>
-          <div>
-            <label>Email</label>
-            <input type="text" name="email" required="required" />
-          </div>
-          <div>
-            <label>Phone</label>
-            <input type="tel" name="phone" placeholder="+1" />
-          </div>
-          <div>
-            <button type="submit" class="btn">Contact Us</button>
-          </div>
-          <input type="hidden" name="language" value="en">
-          <input type="hidden" name="type" value="hempscouter">
-        </div>
-        <div class="cf-turnstile" data-sitekey="0x4AAAAAAAdJSPdA27x_X1le" data-theme="light"></div>
-      </form>
-    </section>
-  </div>
-  
-  <section>
+  <section class="alt">
     <h2>Frequently Asked Questions</h2>
 
     <h3>How are male hemp plants detected?</h3>
@@ -324,11 +301,11 @@
 
   </section>
 
-  <div class="alt">
+  <div>
     <section>
       <h2>How can we help?</h2>
       <p>Get in touch or speak to sales to learn more about HempScouter.</p>
-      <a class="btn" href="#contact">Contact us</a>
+      <a class="btn" href="javascript:window.Beacon('open')">Contact us</a>
     </section>
   </div>
 
@@ -348,7 +325,7 @@
           <a href="#company">Company</a>
         </div>
         <div>
-          <a href="#contact">Contact</a>
+          <a href="javascript:window.Beacon('open')">Contact</a>
         </div>
       </div>
       <div class="copyright">Terms & Privacy Policy. © 2022 Skysense Inc. All rights reserved.</div>

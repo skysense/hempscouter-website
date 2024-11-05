@@ -1,0 +1,12 @@
+{
+  "name": "hempscouter-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/skysense/hempscouter-website.git",
+  "author": "Philip Bergqvist <philip@pqvst.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "bundle exec jekyll serve --drafts --future",
+    "preview": "bundle exec jekyll serve"
+  }
+}
